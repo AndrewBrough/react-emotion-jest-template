@@ -1,9 +1,23 @@
-import React from "react";
+import * as React from "react";
 
-import { storiesOf } from "@storybook/react";
+import { mount } from "enzyme";
+import { {{name}} } from "../{{name}}";
 
-import { {{name}} } from ".";
+describe("{{name}}", () => {
+  const wrapper;
 
-storiesOf("{{name}}", module).add("default", () => {
-  return <{{name}} />;
+  beforeEach(()=>{
+    const wrapper = mount(
+      <{{name}} />
+    );
+  })
+
+  it("renders correctly", () => {
+    
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("", ()=> {
+
+  });
 });
