@@ -6,9 +6,11 @@ import { {{name}} } from "../{{name}}";
 describe("{{name}}", () => {
   let wrapper;
 
+  const buildWrapper = () => {
+    wrapper = mount(<{{name}} />);
+  };
+
   beforeEach(()=>{
-    wrapper = mount(
-      <{{name}} />
-    );
-  })
+    buildWrapper();
+  });
 });
