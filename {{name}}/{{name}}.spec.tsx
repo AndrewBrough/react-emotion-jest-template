@@ -4,20 +4,11 @@ import { mount } from "enzyme";
 import { {{name}} } from "../{{name}}";
 
 describe("{{name}}", () => {
-  const wrapper;
+  let wrapper;
 
   beforeEach(()=>{
-    const wrapper = mount(
+    wrapper = mount(
       <{{name}} />
     );
   })
-
-  it("renders correctly", () => {
-    
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it("", ()=> {
-
-  });
 });
